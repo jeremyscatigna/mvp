@@ -71,7 +71,7 @@ export const Header = () => {
     return (
         <div className='max-w-lg md:max-w-7xl relative mx-auto pt-20 px-4 w-full left-0 top-0'>
             <div className='flex flex-col justify-center items-center px-4'>
-                <h1 className='text-lg md:text-3xl font-semibold text-black dark:text-white text-center'>
+                <h1 className='text-md md:text-3xl md:font-semibold text-black dark:text-white text-center'>
                     Idea to launch in less than 2 weeks. <br />
                     <span className='text-4xl md:text-[6rem] font-bold mt-1 leading-none'>
                         We craft Minimum viable <u>Saas</u> products.
