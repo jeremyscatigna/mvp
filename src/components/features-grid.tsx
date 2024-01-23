@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 
 export function BentoGridFeatures() {
     return (
-        <BentoGrid className='max-w-7xl mx-auto md:auto-rows-[30rem]'>
+        <BentoGrid className='max-w-7xl mx-auto md:auto-rows-[30rem] px-4'>
             {items.map((item, i) => (
                 <BentoGridItem
                     key={i}
