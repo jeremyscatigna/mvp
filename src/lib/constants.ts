@@ -1,5 +1,5 @@
 export const constants = {
-    title: 'mvp.studio',
+    title: 'mvps.studio',
     url: 'https://opencap.co',
     description: 'OpenCap is a decentralized, open-source, and censorship-resistant alternative to traditional domain name systems.',
     twitter: {

@@ -62,7 +62,7 @@ export function Footer() {
                 </div>
                 <p className='mt-10 text-center text-xs leading-5 text-gray-500'>Made with ❤️ in South of France.</p>
                 <p className='mt-4 text-center text-xs leading-5 text-gray-500'>
-                    &copy; {new Date().getFullYear()} mvp. All rights reserved.
+                    &copy; {new Date().getFullYear()} mvps.studio. All rights reserved.
                 </p>
             </div>
         </footer>

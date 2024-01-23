@@ -5,7 +5,7 @@ import localFont from 'next/font/local';
 import { Toaster } from '@/components/ui/sonner';
 
 export const metadata: Metadata = {
-    title: 'mvp.studio',
+    title: 'mvps.studio',
     description: 'By Founders, for Founders. We build your MVPs.',
     icons: [{ rel: 'icon', url: '/favicon.ico' }],
     metadataBase: new URL(constants.url),
