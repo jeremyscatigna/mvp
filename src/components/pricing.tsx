@@ -66,7 +66,7 @@ export function Pricing() {
                 Tailored to fit your needs, with straightforward and transparent packages.
             </p>
 
-            <div className='mx-auto pt-12 max-w-7xl grid grid-cols-2 gap-24 justify-items-center'>
+            <div className='mx-auto pt-12 max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-24 justify-items-center'>
                 {tiers.map((tier, tierIdx) => (
                     <div className='flex flex-col justify-between w-full' key={tier.id}>
                         <div className='relative h-full'>
@@ -137,7 +137,7 @@ function LifetimePricing() {
         <div className='mt-4 flex flex-col justify-between max-w-7xl'>
             <div className='relative h-full w-full'>
                 <div className='relative overflow-hidden rounded-2xl border border-white/10 px-6 py-8 shadow-xl'>
-                    <div className='flex w-full'>
+                    <div className='flex flex-col md:flex-row w-full'>
                         <div className='p-8 sm:p-10 lg:flex-auto'>
                             <h3 className='flex items-center font-cal text-2xl text-black'>
                                 Custom

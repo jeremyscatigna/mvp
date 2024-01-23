@@ -11,7 +11,7 @@ export function LampFeature() {
                 By Founders, For Founders.
             </h1>
             <div className='max-w-4xl text-center'>
-                <p className='mt-6 text-lg leading-8 text-foreground/60'>
+                <p className='mt-6 text-sm md:text-lg md:leading-8 text-foreground/60'>
                     As founders ourselves, we know the importance of moving quickly and getting it right the first time. Our team is
                     dedicated to transforming your ideas into functional and appealing MVPs in record time. With our expertise, we
                     don&apos;t just build products; we craft experiences tailored to attract and engage your early users, setting a solid

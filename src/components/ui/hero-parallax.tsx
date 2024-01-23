@@ -69,15 +69,15 @@ export const HeroParallax = ({
 
 export const Header = () => {
     return (
-        <div className='max-w-7xl relative mx-auto pt-20 px-4 w-full left-0 top-0'>
+        <div className='max-w-2xl md:max-w-7xl relative mx-auto pt-20 px-4 w-full left-0 top-0'>
             <div className='flex flex-col justify-center items-center'>
-                <h1 className='text-3xl font-semibold text-black dark:text-white text-center'>
+                <h1 className='text-xl md:text-3xl font-semibold text-black dark:text-white text-center'>
                     Idea to launch in less than 2 weeks. <br />
-                    <span className='text-4xl md:text-[6rem] font-bold mt-1 leading-none'>
+                    <span className='text-5xl md:text-[6rem] font-bold mt-1 leading-none'>
                         We craft Minimum viable <u>Saas</u> products.
                     </span>
                 </h1>
-                <p className='mt-4 text-lg sm:mt-8'>
+                <p className='mt-4 text-md sm:mt-8 max-w-md md:max-w-7xl text-center'>
                     Helping founders bring their idea to life, attract early users, and validate their idea.
                 </p>
                 <div className='flex items-center gap-2 mt-4 z-50'>

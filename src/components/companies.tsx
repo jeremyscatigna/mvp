@@ -66,11 +66,11 @@ const companies = [
 export function Companies() {
     return (
         <div className='w-full h-[30rem] flex flex-col justify-center items-center pb-24'>
-            <h2 className='text-4xl font-semibold text-black dark:text-white text-center'>
+            <h2 className='text-lg md:text-4xl font-semibold text-black dark:text-white text-center'>
                 The foundation of the world’s best products. <br />
                 From next-gen startups to established enterprises.
             </h2>
-            <div className='w-full grid grid-cols-6 grid-rows-2 gap-4 max-w-7xl mt-24'>
+            <div className='w-full grid grid-cols-6 grid-rows-2 gap-4 max-w-7xl mt-8 md:mt-24'>
                 {companies.map((company) => (
                     <div key={company.name} className='flex flex-col w-full justify-center items-center'>
                         <company.svg />
