@@ -6,7 +6,7 @@ export const constants = {
         url: 'https://twitter.com/opencapco',
     },
     github: {
-        url: 'https://github.com/opencapco/opencap.co',
+        url: 'https://cal.com/mvp.studio/30min',
     },
     discord: {
         url: 'https://discord.gg/tVfBqUGN',

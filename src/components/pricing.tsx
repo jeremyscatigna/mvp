@@ -23,7 +23,7 @@ const tiers = [
             'Basic UI/UX design',
             'Project completion within 2 weeks',
         ],
-        cta: 'Get Started',
+        cta: 'Book a call',
     },
     {
         name: 'Pro',
@@ -94,7 +94,9 @@ export function Pricing() {
                                     </div>
                                     <p className='mt-4 text-sm leading-6 text-slate-500'>{tier.description}</p>
                                     <p className='mt-6 flex items-baseline gap-x-1'>
-                                        <span className='text-4xl font-bold tracking-tight text-black'>{'$1999'}</span>
+                                        <span className='text-4xl font-bold tracking-tight text-black'>
+                                            {tier.mostPopular ? '$1999' : '999'}
+                                        </span>
                                     </p>
                                     <ul role='list' className='mt-8 space-y-3 text-sm leading-6 text-slate-500'>
                                         {tier.features.map((feature) => (
@@ -107,7 +109,8 @@ export function Pricing() {
                                 </div>
 
                                 <a
-                                    href='/#hero'
+                                    href='https://cal.com/mvp.studio/30min'
+                                    target='_blank'
                                     aria-describedby={tier.id}
                                     className={clsx(
                                         tier.mostPopular
@@ -116,7 +119,7 @@ export function Pricing() {
                                         'mt-8 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600',
                                     )}
                                 >
-                                    Join the waitlist
+                                    Book a call
                                 </a>
                             </div>
                         </div>
@@ -171,10 +174,11 @@ function LifetimePricing() {
                                         <span className='text-4xl font-bold tracking-tight text-white'>Price on quote</span>
                                     </p>
                                     <a
-                                        href='/#hero'
+                                        href='https://cal.com/mvp.studio/30min'
+                                        target='_blank'
                                         className='mt-10 block w-full rounded-md bg-gradient-to-r from-blue-600 to-cyan-400 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'
                                     >
-                                        Contact us
+                                        Book a call
                                     </a>
                                     <p className='mt-6 text-xs leading-5 text-slate-500'>
                                         Invoices and receipts available for easy company reimbursement

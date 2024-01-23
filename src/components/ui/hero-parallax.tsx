@@ -1,16 +1,10 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { motion, useScroll, useTransform, useSpring, MotionValue } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from './dialog';
 import { Button } from './button';
-import { Loader2 } from 'lucide-react';
-import { Label } from './label';
-import { Input } from './input';
 import { constants } from '@/lib/constants';
-import { useForm } from 'react-hook-form';
-import { toast } from 'sonner';
 
 export const HeroParallax = ({
     products,
@@ -74,26 +68,6 @@ export const HeroParallax = ({
 };
 
 export const Header = () => {
-    const [email, setEmail] = useState('');
-    const [modalOpen, setModalOpen] = useState(false);
-    const [loading, setLoading] = useState(false);
-    const { handleSubmit } = useForm();
-
-    const joinWaitlist = async () => {
-        setLoading(true);
-        const response = await fetch(`/api/waitlist?email=${email}`);
-
-        if (response.ok) {
-            toast('You have successfully joined the waitlist, you will be contacted shortly.');
-        } else {
-            toast('Failed to join the waitlist. Please try again later.');
-        }
-
-        setLoading(false);
-        setModalOpen(false);
-        setEmail('');
-    };
-
     return (
         <div className='max-w-7xl relative mx-auto pt-20 px-4 w-full left-0 top-0'>
             <div className='flex flex-col justify-center items-center'>
@@ -106,52 +80,15 @@ export const Header = () => {
                 <p className='mt-4 text-lg sm:mt-8'>
                     Helping founders bring their idea to life, attract early users, and validate their idea.
                 </p>
-                <div className='flex items-center gap-2 mt-4'>
-                    <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-                        <DialogTrigger asChild>
-                            <Button onClick={() => setModalOpen(true)} className='hover:no-underline'>
-                                See packages
-                            </Button>
-                        </DialogTrigger>
-                        <DialogContent className='sm:max-w-[425px]'>
-                            <form onSubmit={handleSubmit(joinWaitlist)}>
-                                <DialogHeader>
-                                    <DialogTitle>Waitlist</DialogTitle>
-                                    <DialogDescription>Add your email to the waitlist. Click save when you&apos;re done.</DialogDescription>
-                                </DialogHeader>
-                                <div className='grid gap-4 py-4'>
-                                    <div className='grid grid-cols-4 items-center gap-4'>
-                                        <Label htmlFor='email' className='text-right'>
-                                            Email
-                                        </Label>
-                                        <Input
-                                            id='email'
-                                            type='email' // Specify the input type as "email" for better validation
-                                            placeholder='abc@example.com'
-                                            className='col-span-3'
-                                            value={email}
-                                            onChange={(e) => setEmail(e.target.value)}
-                                        />
-                                    </div>
-                                </div>
-                                <DialogFooter>
-                                    <Button type='submit'>
-                                        {loading ? (
-                                            <>
-                                                <Loader2 className='h-4 w-4 animate-spin' />
-                                                <span className='ml-2'>Joining...</span>
-                                            </>
-                                        ) : (
-                                            'Join the waitlist'
-                                        )}
-                                    </Button>
-                                </DialogFooter>
-                            </form>
-                        </DialogContent>
-                    </Dialog>
+                <div className='flex items-center gap-2 mt-4 z-50'>
+                    <Button className='hover:no-underline'>
+                        <Link href='#pricing' className='hover:no-underline'>
+                            See packages
+                        </Link>
+                    </Button>
 
                     <Button size='lg' variant='outline'>
-                        <Link href={constants.github.url} className='hover:no-underline'>
+                        <Link href={constants.github.url} target='_blank' className='hover:no-underline'>
                             Book a call
                         </Link>
                     </Button>
