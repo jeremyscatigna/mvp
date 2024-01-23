@@ -60,10 +60,10 @@ export function Pricing() {
                 <h2 className='bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text font-cal text-base leading-7 text-transparent'>
                     Pricing
                 </h2>
-                <p className='mt-2 font-cal text-4xl text-foreground sm:text-5xl'>Take your startup to an other level.</p>
+                <p className='mt-2 font-cal text-4xl text-foreground sm:text-5xl'>Take your startup to the next level.</p>
             </div>
             <p className='mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-foreground/60'>
-                Tailored to fit your startup needs, with straightforward and transparent packages.
+                Tailored to fit your needs, with straightforward and transparent packages.
             </p>
 
             <div className='mx-auto pt-12 max-w-7xl grid grid-cols-2 gap-24 justify-items-center'>
