@@ -5,8 +5,8 @@ import localFont from 'next/font/local';
 import { Toaster } from '@/components/ui/sonner';
 
 export const metadata: Metadata = {
-    title: 'OpenCap',
-    description: 'OpenCap is an open source cap table management tool that does not sell your data.',
+    title: 'mvp.studio',
+    description: 'By Founders, for Founders. We build your MVPs.',
     icons: [{ rel: 'icon', url: '/favicon.ico' }],
     metadataBase: new URL(constants.url),
 };
